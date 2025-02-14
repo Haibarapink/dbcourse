@@ -133,6 +133,7 @@ THIRD_PARTY_INSTALL_PREFIX=/usr/local bash build.sh init
 *注意*：安装docker遇到了问题希望大家动手上网解决。
 
 1. 在任意文件夹中创建一个`Dockerfile`，并把下面内容粘贴进去。
+   
 ```
 # 注意这一步，可能会因为网络问题失败，需要走代理软件，然后在终端中使用命令 docker pull linuxserver/code-server:latest。
 FROM linuxserver/code-server:latest
@@ -192,6 +193,7 @@ RUN mkdir -p /root/docker/bin && touch /etc/.firstrun
 
 # RUN chmod +x /root/docker/bin/*
 ```
+
 然后将该文件夹在终端中打开，输入下面命令：
 `docker build -t miniob:latest .`
 
